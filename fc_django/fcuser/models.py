@@ -12,3 +12,6 @@ class Fcuser(models.Model):
         db_table = 'ssk_user'
         verbose_name = '사용잦'
         verbose_name_plural = '사용자'
+
+    def __str__(self):
+        return self.email

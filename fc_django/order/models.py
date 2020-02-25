@@ -15,3 +15,6 @@ class Order(models.Model):
         db_table = 'ssk_order'
         verbose_name = '주문'
         verbose_name_plural = '주문'
+
+    def __str__(self):
+        return str(self.fcuser), str(self.product)

@@ -14,3 +14,6 @@ class Product(models.Model):
         db_table = 'ssk_product'
         verbose_name = '상품'
         verbose_name_plural = '상품'
+
+    def __str__(self):
+        return self.name
