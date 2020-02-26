@@ -17,4 +17,4 @@ class Order(models.Model):
         verbose_name_plural = '주문'
 
     def __str__(self):
-        return str(self.fcuser), str(self.product)
+        return str(self.fcuser)+' ' + str(self.product)
