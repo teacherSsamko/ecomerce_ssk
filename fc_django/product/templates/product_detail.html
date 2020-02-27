@@ -33,6 +33,7 @@
         <li class="list-group-item">
           등록날짜: {{ product.reg_date|date:'Y-m-d H:i' }}
         </li>
+        <li class="list-group-item">재고: {{ product.stock|intcomma }}개</li>
         <li class="list-group-item">설명: {{ product.description|safe }}</li>
       </ul>
     </div>
